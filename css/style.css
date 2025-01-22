@@ -104,11 +104,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .banner-left {
-    border: 1px solid #8298fc;
+    /* border: 1px solid #8298fc; */
     width: 58%;
 }
 
@@ -165,7 +165,7 @@ body {
 }
 
 .banner-right {
-    border: 1px solid #fcbd82;
+    /* border: 1px solid #fcbd82; */
     width: 42%;
 
 }
@@ -181,7 +181,7 @@ body {
 
 /* curriculum section css start here  */
 .curriculum-section {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     background-image: url(../assets/bg.png);
     ;
 
@@ -368,15 +368,19 @@ body {
 
 /*------------ Our stories section css here --------------- */
 .stories-section {
-    border: 1px solid rgb(50, 192, 14);
+    /* border: 1px solid rgb(50, 192, 14); */
     margin: 0 auto;
-    width: 85%;
+    width: 95%;
+
 }
 
 .stories-container {
     background-image: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
     ;
+    margin-top: 5px;
+
 }
+
 
 .stories-section>h2 {
     text-align: center;
@@ -389,7 +393,7 @@ body {
 }
 
 .stories {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     display: flex;
     gap: 10px;
@@ -403,11 +407,11 @@ body {
 .right-multi-stories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 15px;
 }
 
 .story-1 {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 
     border-radius: 16px;
 
@@ -478,11 +482,13 @@ body {
 
     background: url(), rgb(255, 255, 255);
 }
+
 .story-3>.box>img {
     border-radius: 16px 16px 0px 0px;
 
     background: url(), rgb(255, 255, 255);
 }
+
 .story-4>.box>img {
     border-radius: 16px 16px 0px 0px;
 
@@ -505,12 +511,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .story3-date {
     top: -30px;
     left: 20px;
     border-radius: 47.93px;
 
-background: rgb(93, 88, 240);
+    background: rgb(93, 88, 240);
     color: rgb(255, 255, 255);
     font-family: Quicksand;
     font-size: 15.34px;
@@ -522,6 +529,7 @@ background: rgb(93, 88, 240);
     justify-content: center;
     align-items: center;
 }
+
 .story4-date {
     top: -30px;
     left: 20px;
@@ -539,6 +547,7 @@ background: rgb(93, 88, 240);
     justify-content: center;
     align-items: center;
 }
+
 .story5-date {
     top: -30px;
     left: 20px;
@@ -570,11 +579,118 @@ background: rgb(93, 88, 240);
 
 }
 
+.story-button {
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    width: 197px;
+    height: 50px;
+    padding: 10px;
+    margin: 40px 0px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    border: none;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
 /*------------ Our stories section End here --------------- */
 
+/* ---------footer section css here ------------- */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(1, 172, 253);
+}
+.footer-start{
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.start-top{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 30px;
+}
+.start-logo>img{
+    width: 5rem;
+    
+}
+.start-title> h2{
+  
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 35px;
+font-weight: 700;
+line-height: 39px;
+
+}
+.start-details>p{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 15px;
+font-weight: 400;
+line-height: 20px;
+
+}
+.footer-start,
+.footer-middle,
+.footer-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+.footer-middle>ul>li{
+    list-style: none;
+}
+.footer-middle li:nth-child(1){
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 24px;
+font-weight: 600;
+line-height: 30px;
+
+}
+.footer-middle a:nth-child(n){
+color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+text-decoration: none;
+}
+.footer-middle>ul{
+    padding: 75px;
+}
+
+.footer-end{
+    flex-direction: column;
+    padding-bottom: 170px;
+}
+.end-top>h3{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 26px;
+font-weight: 700;
+line-height: 26px;
+
+}
+.end-bottom>img{
+    cursor: pointer;
+}
 
 /* ----------responsive  for mobile device  start here------------------------------------  */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
 
     /* on mobile device the nav middle and nav end part will be gone to popup menu bar  */
     .nav-middle,
@@ -655,14 +771,14 @@ background: rgb(93, 88, 240);
 
     .curriculum-section {
         height: auto;
-        background-color: #8298fc;
+        /* background-color: #8298fc; */
 
     }
 
     .curriculums {
         width: 90%;
         height: 100%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -745,7 +861,199 @@ background: rgb(93, 88, 240);
     .arrow-container {
         display: none;
     }
-   our story section responsiveness for mobile deive
+
+    /* our story section responsiveness for mobile deive  */
+    .left-single-story {
+        display: none;
+    }
+
+    .stories-container {
+        /* background-color: #8298fc; */
+        height: auto;
+
+    }
+
+    .box>img {
+        width: 100%;
+    }
+
+    .right-multi-stories {
+        /* border: 1px solid rgb(5, 160, 82); */
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, afr);
+
+    }
+
+    .story2-date {
+        width: 8rem;
+        height: 1.8rem;
+        top: -25px;
+        left: 20px;
+        border-radius: 47.93px;
+        background: rgb(149, 178, 38);
+        color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 28.76px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .story3-date {
+        width: 8rem;
+        height: 1.8rem;
+        top: -25px;
+        left: 20px;
+        border-radius: 47.93px;
+        background: rgb(9, 193, 199);
+        color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 28.76px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .story4-date {
+        width: 8rem;
+        height: 1.8rem;
+        top: -25px;
+        left: 20px;
+        border-radius: 47.93px;
+        background: rgb(207, 108, 15);
+        color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 28.76px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .story5-date {
+        width: 8rem;
+        height: 1.8rem;
+        top: -25px;
+        left: 20px;
+        border-radius: 47.93px;
+        background: rgb(199, 20, 169);
+        color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 28.76px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .story2-details {
+        color: rgb(0, 0, 0);
+        font-family: Quicksand;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 20px;
+        display: flex;
+        text-align: left;
+        padding: 0 20px;
+        bottom: 30px;
+
+    }
+
+    .stories-section>h2 {
+        text-align: center;
+        font-family: Quicksand;
+        font-size: 36px;
+    }
+
+    .story-button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 700;
+        border: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* footer mobile devce responsive  */
+   
+    footer{
+       
+        flex-direction: column;
+       
+
+    }
+    .start-top{
+        background-color: #09122C;
+        text-align: left;
+       align-items: center;
+       justify-content: left;
+       justify-content: flex-start;
+        padding-left: 50px;
+    }
+    .start-logo{
+        padding-right: 20px;
+        
+    }
+    .start-logo>img{
+        width: 4rem; 
+        padding: 6px;   
+    }
+
+    .start-title> h2{     
+    font-size: 2rem;
+    line-height: 25px;
+    
+    }
+   
+    .start-details>p{
+       
+    /* background-color: #133E87; */
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    }
+     
+    .footer-start{
+        /* background-color: #09122C; */
+        justify-content: flex-start;
+        padding-left: 50px;
+    
+    }
+    
+    
+    .footer-middle{
+        /* background-color: #09122C; */
+        justify-content: flex-start;
+        padding-left: 50px;
+    
+    }
+    .footer-middle>ul{
+        padding: 6px;
+       
+    }
+    
+    .footer-end{
+        /* background-color: #E17564; */
+        align-items: flex-start;
+        padding-left: 60px;
+
+
+    }
+    
 
 }
 
